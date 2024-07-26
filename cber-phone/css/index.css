@@ -1,0 +1,129 @@
+body {
+  background-color: #f5f9fe;
+}
+
+header {
+  background: #f5f9fe;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 2px 4px #e2ebfc;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+header .container a {
+  text-decoration: none;
+  margin-left: 20px;
+  color: #1d365e;
+  transition: 0.3s;
+  position: relative;
+}
+header .container a:hover, header .container a.active {
+  color: #2a73dd;
+}
+header .container a::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #2a73dd;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.3s;
+}
+header .container a:hover::before, header .container a.active::before {
+  width: 100%;
+}
+header .container .logo {
+  font-size: 30px;
+  color: #2a73dd;
+}
+
+.banner {
+  padding-top: 80px;
+  height: 100vh;
+  background-image: url(../img/product-header-bg.jpg);
+  background-size: cover;
+  background-position: bottom;
+}
+.banner .container {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+.banner .title {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.banner .title * {
+  margin: 20px 0;
+}
+.banner .title h2 {
+  color: #2a73dd;
+  font-size: 60px;
+}
+.banner .title h3 {
+  font-size: 40px;
+  color: #1d365e;
+}
+.banner .title .info {
+  border-radius: 8px;
+  padding: 10px 20px;
+  color: #2a73dd;
+  background-color: white;
+  border: 2px solid #2a73dd;
+}
+.banner .title .shop {
+  border-radius: 8px;
+  padding: 10px 20px;
+  color: white;
+  background-color: #2a73dd;
+  border: 2px solid #2a73dd;
+}
+.banner img {
+  width: 80%;
+}
+.banner img img {
+  width: 80%;
+}
+
+.products {
+  padding: 80px 0;
+}
+.products .title {
+  font-size: 40px;
+  color: #1d365e;
+  text-align: center;
+}
+.products .col-4 {
+  padding: 30px;
+}
+.products .item {
+  box-shadow: 6px 6px 12px #e2ebfc, -6px -6px 12px #fff;
+  border-radius: 16px;
+  padding: 30px;
+}
+.products .item img {
+  width: 100%;
+  box-shadow: 6px 6px 12px #e2ebfc, -6px -6px 12px #fff;
+  border-radius: 16px;
+}
+.products .item button {
+  border-radius: 8px;
+  padding: 10px 20px;
+  color: #2a73dd;
+  background-color: inherit;
+  border: 2px solid transparent;
+  box-shadow: 2px 2px 4px #e2ebfc, -2px -2px 12px #fff;
+  border-radius: 16px;
+  border-radius: 8px;
+  font-weight: bold;
+}/*# sourceMappingURL=index.css.map */
